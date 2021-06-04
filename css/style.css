@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ifr-principal {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  padding: 35px;
+}
+
+.nav-bar img {
+  margin: 35px auto;
+  width: 100%;
+}
+
+.nav-bar .menu {
+  width: 100%;
+  height: 50%;
+}
