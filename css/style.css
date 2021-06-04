@@ -6,7 +6,7 @@
 
 .ifr-principal {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   width: 350px;
-  height: 100vh;
+  height: 90vh;
   padding: 35px;
 }
 
@@ -27,4 +27,23 @@
 .nav-bar .menu {
   width: 100%;
   height: 50%;
+}
+
+footer {
+  background-color: #2f4676;
+  width: 100%;
+  height: 10vh;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e95ad6;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
