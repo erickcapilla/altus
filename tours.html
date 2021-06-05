@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Our Tours</title>
+  </head>
+  <body>
+    <main class="tours">
+      <div class="container">
+        <h1>Our Tours</h1>
+        <div class="container-slider">
+          <span class="prev-btn" id="prev_btn"></span>
+          <div class="slider" id="slider">
+            <div class="items-slider">
+              <img src="./images/barcelona.jpg" alt="Barcelona, España" class="item">
+              <h3>Barcelona, Spain</h3>
+            </div>
+            <div class="items-slider">
+              <img src="./images/berlin.jpg" alt="Berlin, Alemania" class="item">
+              <h3>Berlin, Germany</h3>
+            </div>
+            <div class="items-slider">
+              <img src="./images/chichen-itza.png" alt="Chichen-itza, Mexico" class="item">
+              <h3>Chichen itza, Mexico</h3>
+            </div>
+            <div class="items-slider">
+              <img src="./images/cozumel.png" alt="Cozumel, Mexico" class="item">
+              <h3>Cozumel, Mexico</h3>
+            </div>
+            <div class="items-slider">
+              <img src="./images/paris.jpg" alt="Paris, Francia" class="item">
+              <h3>Paris, France</h3>
+            </div>
+          </div>
+          <span class="next-btn" id="next_btn"></span>
+        </div>
+        <button>Book Trip</button>
+      </div>
+    </main>
+
+    <script>
+      let slider = document.getElementById('slider')
+      let item = document.querySelectorAll('.items-slider')
+      let prev_btn = document.getElementById('prev_btn')
+      let next_btn = document.getElementById('next_btn')
+
+      next_btn.addEventListener('click', Next)
+      prev_btn.addEventListener('click', Prev)
+
+      function Next() {
+        let itemFirst = document.querySelectorAll('.items-slider')[0]
+        slider.style.marginLeft = "-200%"
+        slider.style.transition = "all 0.5s"
+        setTimeout(() => {
+          slider.style.transition = "none"
+          slider.insertAdjacentElement('beforeend', itemFirst)
+          slider.style.marginLeft = "-100%"
+        }, 500)
+      }
+
+      function Prev() {
+        let item = document.querySelectorAll('.items-slider')
+        let itemLast = item[item.length - 1]
+        slider.style.marginLeft = "0"
+        slider.style.transition = "all 0.5s"
+        setTimeout(() => {
+          slider.style.transition = "none"
+          slider.insertAdjacentElement('afterbegin', itemLast)
+          slider.style.marginLeft = "-100%"
+        }, 500)
+      }
+    </script>
+  </body>
+</html>

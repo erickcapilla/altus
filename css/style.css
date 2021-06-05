@@ -26,6 +26,7 @@ body {
 .nav-bar img {
   margin: 35px auto;
   width: 100%;
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, .5));
 }
 
 .nav-bar .menu {
@@ -111,9 +112,9 @@ footer a:hover {
   background-size: cover;
 }
 
-/* ABOUT US */
+/* ABOUT */
 
-.about {
+main {
   width: 100%;
   height: 100vh;
   background-color: #40729e;
@@ -138,4 +139,74 @@ p {
 
 .about img {
   filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, .5));
+}
+
+/* TOURS */
+
+.container-slider {
+  border: 1px solid black;
+  width: 400px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 25px auto;
+}
+
+.slider {
+  height: 100%;
+  margin-left: -100%;
+  display: flex;
+}
+
+.items-slider {
+  position: relative;
+}
+
+.items-slider img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-left: -1px;
+}
+
+.items-slider h3 {
+  height: 25px;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-slider span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.container-slider span:hover {
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.container-slider .prev-btn {
+  left: 10px;
+  background-image: url('https://icongr.am/fontawesome/angle-left.svg?size=128&color=843579');
+}
+
+.container-slider .next-btn {
+  right: 10px;
+  background-image: url('https://icongr.am/fontawesome/angle-right.svg?size=128&color=843579');
 }
