@@ -185,7 +185,7 @@ p {
   display: block;
   width: 30px;
   height: 30px;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(0, 0, 0, .6);
   border-radius: 50%;
   position: absolute;
   background-position: center;
@@ -197,16 +197,24 @@ p {
 }
 
 .container-slider span:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: black;
   cursor: pointer;
 }
 
 .container-slider .prev-btn {
   left: 10px;
-  background-image: url('https://icongr.am/fontawesome/angle-left.svg?size=128&color=843579');
+  background-image: url('https://icongr.am/fontawesome/angle-left.svg?size=128&color=ffffff');
 }
 
 .container-slider .next-btn {
   right: 10px;
-  background-image: url('https://icongr.am/fontawesome/angle-right.svg?size=128&color=843579');
+  background-image: url('https://icongr.am/fontawesome/angle-right.svg?size=128&color=ffffff');
+}
+
+.container-slider + button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: #e95ad6;
+  cursor: pointer;
 }

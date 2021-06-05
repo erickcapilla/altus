@@ -37,18 +37,27 @@
           </div>
           <span class="next-btn" id="next_btn"></span>
         </div>
-        <button>Book Trip</button>
+        <button id="btn_book">Book Trip</button>
       </div>
     </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
       let slider = document.getElementById('slider')
       let item = document.querySelectorAll('.items-slider')
       let prev_btn = document.getElementById('prev_btn')
       let next_btn = document.getElementById('next_btn')
+      let book_btn = document.getElementById('btn_book')
 
       next_btn.addEventListener('click', Next)
       prev_btn.addEventListener('click', Prev)
+      book_btn.addEventListener('click', () => {
+        Swal.fire(
+          '¡Reserved!',
+          'success'
+        )
+      })
 
       function Next() {
         let itemFirst = document.querySelectorAll('.items-slider')[0]
