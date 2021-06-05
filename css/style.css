@@ -1,3 +1,5 @@
+/* Resetear Los estilos por
+defecto del navegador */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,8 @@ body {
   position: relative;
 }
 
+/* Posicionamineto de
+la  barra del menu */
 .nav-bar {
   position: absolute;
   top: 0;

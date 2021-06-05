@@ -26,13 +26,19 @@
   </nav>
 
   <script>
+    /*
+    Script para controlar en que documento esta el usuario
+    y cambiarle los estilos en el menu
+    */
+    // Seleccionar todos los item del menu
     const items = document.querySelectorAll('#item');
+    // Seleccionar todos los iconos de cada item
     const icons = document.querySelectorAll('#icon');
 
-    console.log(item);
-
+    // Recorrer cada item con un for each
     items.forEach(item => {
       item.addEventListener('click', e => {
+        // Elemento clickeado
         const clicked = e.srcElement
 
         items.forEach(i => {
@@ -62,7 +68,7 @@
         }
 
       })
-    })
+    });
   </script>
 </body>
 </html>
