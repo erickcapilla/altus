@@ -11,18 +11,23 @@
   <nav class="nav-menu">
     <ul class="items">
       <li>
-        <span class="icon-item"></span> <a href="./home.html" target="iframe-principal">Home Page</a>
+        <span class="icon-item" id="icon"></span> <a href="./home.html" target="iframe-principal" id="item">Home Page</a>
       </li>
       <li>
-        <span class="icon-item"></span> <a href="./about.html" target="iframe-principal">About Us</a>
+        <span class="icon-item" id="icon"></span> <a href="./about.html" target="iframe-principal" id="item">About Us</a>
       </li>
       <li>
-        <span class="icon-item"></span> <a href="./tours.html" target="iframe-principal">Our Tours</a>
+        <span class="icon-item" id="icon"></span> <a href="./tours.html" target="iframe-principal" id="item">Our Tours</a>
       </li>
       <li>
-        <span class="icon-item"></span> <a href="./contact.html" target="iframe-principal">Contanct Us</a>
+        <span class="icon-item" id="icon"></span> <a href="./contact.html" target="iframe-principal" id="item">Contanct Us</a>
       </li>
     </ul>
   </nav>
+
+  <script>
+    const items = document.querySelectorAll('.item')
+    const icons = document.querySelectorAll('.icon')
+  </script>
 </body>
 </html>

@@ -222,7 +222,7 @@ p {
 /* CONTANCT */
 
 .contact {
-  height: 950px;
+  height: 1250px;
   background-color: #40729e;
 }
 
@@ -248,13 +248,32 @@ fieldset * {
   margin-bottom: 10px;
 }
 
+label {
+  margin: 10px auto;
+
+}
+
 input {
+  padding: 0 10px;
+  border: none;
   border-radius: 10px;
   height: 30px;
   vertical-align: middle;
-  margin-bottom: 10px;
+  margin: 15px auto;
 }
 
 textarea {
   border-radius: 10px;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+.enviar {
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid white;
+  background-color: #e95ad6;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
