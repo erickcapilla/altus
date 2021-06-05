@@ -26,8 +26,43 @@
   </nav>
 
   <script>
-    const items = document.querySelectorAll('.item')
-    const icons = document.querySelectorAll('.icon')
+    const items = document.querySelectorAll('#item');
+    const icons = document.querySelectorAll('#icon');
+
+    console.log(item);
+
+    items.forEach(item => {
+      item.addEventListener('click', e => {
+        const clicked = e.srcElement
+
+        items.forEach(i => {
+          i.style.borderBottom = "none"
+        })
+
+        icons.forEach(icon => {
+          icon.style.backgroundImage = "url('https://icongr.am/fontawesome/caret-right.svg?size=128&color=ffffff')"
+        })
+
+        if(clicked === items[0]) {
+          icons[0].style.transition = "all .5s"
+          icons[0].style.backgroundImage = "url('https://icongr.am/fontawesome/caret-right.svg?size=128&color=000000')"
+          items[0].style.borderBottom = "2px solid white"
+        } else if(clicked === items[1]) {
+          icons[1].style.transition = "all .5s"
+          icons[1].style.backgroundImage = "url('https://icongr.am/fontawesome/caret-right.svg?size=128&color=000000')"
+          items[1].style.borderBottom = "2px solid white"
+        } else if(clicked === items[2]) {
+          icons[2].style.transition = "all .5s"
+          icons[2].style.backgroundImage = "url('https://icongr.am/fontawesome/caret-right.svg?size=128&color=000000')"
+          items[2].style.borderBottom = "2px solid white"
+        } else if(clicked === items[3]) {
+          icons[3].style.transition = "all .5s"
+          icons[3].style.backgroundImage = "url('https://icongr.am/fontawesome/caret-right.svg?size=128&color=000000')"
+          items[3].style.borderBottom = "2px solid white"
+        }
+
+      })
+    })
   </script>
 </body>
 </html>
