@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contanct</title>
+  </head>
+  <body>
+    <main class="contact">
+      <div class="container-contact">
+        <h1>¡Contact Us!</h1>
+        <form autocomplete="on" class="formulario">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label>
+              <input type="text" autofocus required placeholder="Type your name">
+            </label>
+            <label>
+              <input type="text" required placeholder="Type your last-name">
+            </label>
+            <br>
+            <label>
+              <input type="radio" value="male" required> Male <br>
+              <input type="radio" value="femenine" required> Femenine <br>
+              <input type="radio" value="other"> Other <br>
+            </label>
+            <label>
+              <b>Date of Birth</b>
+              <input type="date" name="bday" min="2001-01-01" max="2020-12-31" autocomplete="off" required>
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Preferences</legend>
+            <label>
+              <b>Country</b><br>
+              <input type="checkbox" name="pais1" value="mexico"> Mexico <br>
+              <input type="checkbox" name="pais2" value="france"> France <br>
+              <input type="checkbox" name="pais3" value="germany"> Germany <br>
+              <input type="checkbox" name="pais4" value="spain"> Spain <br>
+            </label>
+            <label>
+              <b>Your favorite transport</b>
+              <input list="transporte" name="transporte">
+                <datalist id="transporte">
+                  <option value="Car">Car</option>
+                  <option value="Air Plane">Air Plane</option>
+                  <option value="Bike">Bike</option>
+                </datalist>
+            </label>
+          </fieldset>
+          <label>
+            <input type="email" placeholder="Type your email">
+          </label>
+          <textarea rows="10" cols="50" placeholder="enter a comment"></textarea>
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

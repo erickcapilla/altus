@@ -218,3 +218,43 @@ p {
   background-color: #e95ad6;
   cursor: pointer;
 }
+
+/* CONTANCT */
+
+.contact {
+  height: 950px;
+  background-color: #40729e;
+}
+
+.container-contact {
+  width: 40%;
+  float: right;
+  margin-right: 50px;
+}
+
+fieldset {
+  border-radius: 25px;
+  border: 1px solid white;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset * {
+  margin-bottom: 10px;
+}
+
+input {
+  border-radius: 10px;
+  height: 30px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+}
